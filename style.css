@@ -125,3 +125,28 @@ footer {
     width: 100%;
     z-index: 1;
 }
+
+.login-form {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    
+}
+
+.login-form form {
+    display: flex;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.login-form a {
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

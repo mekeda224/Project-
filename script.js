@@ -1,44 +1,75 @@
 "use strict";
 
-// const fraction1 = {
-//     numerator: 5,
-//     denominator: 2
+// const password = document.getElementById('userPassword');
+// const upper = document.getElementById('upper');
+// const lower = document.getElementById('lower');
+// const number = document.getElementById('number');
+// const length = document.getElementById('length');
+// const special_char = document.getElementById('special_char');
+// const errorsBlock = document.querySelector(".errors");
+// const submitButton = document.getElementById('submitButton');
+
+// const checkForChanges = () => {
+//   activateErrorsBlock();
+
+//   if (password.value.match(/[0-9]/)) {
+//     number.style.color = 'green';
+//   } else {
+//     number.style.color = 'red';
+//   }
+
+//   if (password.value.match(/[A-Z]/)) {
+//     upper.style.color = 'green';
+//   } else {
+//     upper.style.color = 'red';
+//   }
+
+//   if (password.value.match(/[a-z]/)) {
+//     lower.style.color = 'green';
+//   } else {
+//     lower.style.color = 'red';
+//   }
+
+//   if (password.value.match(/[!\@\#\$\%\^\&\*\(\)\_\-\+\=\?\>\<\.\,]/)) {
+//     special_char.style.color = 'green';
+//   } else {
+//     special_char.style.color = 'red';
+//   }
+
+//   if (password.value.length >= 8) {
+//     length.style.color = 'green';
+//   } else {
+//     length.style.color = 'red';
+//   }
 // }
 
-// const fraction2 = {
-//     numerator: 6,
-//     denominator: 3
+// const submitForm = () => {
+//   if(password.value.match(/[0-9]/) &&
+//     password.value.match(/[A-Z]/) && 
+//     password.value.match(/[a-z]/) && 
+//     password.value.match(/[!\@\#\$\%\^\&\*\(\)\_\-\+\=\?\>\<\.\,]/) && 
+//     password.value.length >= 8) {
+//     return true;
+//   } else {
+//     return false;
+//   }
 // }
 
-// // 1. Функция сложения 2-х объектов-дробей
-// function addition(a, b) {
-//     let rezult = (a.numerator / a.denominator) + (b.numerator / b.denominator);
-//     console.log(rezult);
+// const activateErrorsBlock = () => {
+//   errorsBlock.style.display = "block";
+//   errorsBlock.style.opacity = 1;
 // }
 
-// addition(fraction1, fraction2);
+const inputName = document.getElementById("inputName");
+const inputId = document.getElementById("inputId");
+const inputMessage = document.getElementById("inputMessage");
 
-// // 2. Функция вычитания 2-х объектов-дробей
-// function subtraction(a, b) {
-//     let rezult = (a.numerator / a.denominator) - (b.numerator / b.denominator);
-//     console.log(rezult);
-// }
-// subtraction(fraction1, fraction2);
-
-// // 3. Функция умножения 2-х объектов-дробей
-
-// function multiplication(a, b) {
-//     let rezult = (a.numerator / a.denominator) * (b.numerator / b.denominator);
-//     console.log(rezult);
-// }
-// multiplication(fraction1, fraction2);
-
-// // 4. Функция деления 2-х объектов-дробей.
-// function division(a, b) {
-//     let rezult = (a.numerator / a.denominator) / (b.numerator / b.denominator);
-//     console.log(rezult);
-// }
-// division(fraction1, fraction2);
-
+const clearForm = () => {
+  setTimeout(() => {
+    inputName.value = "";
+    inputId.value = "";
+    inputMessage.value = "";
+  }, 1000)
+}
 
 

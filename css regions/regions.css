@@ -33,14 +33,31 @@ section {
 }
 
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 0 0;
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
-}
+  }
+  footer div {
+    display: flex;
+    flex-direction: column;
+  }
+  footer a {
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+  footer a:hover {
+    color: #0d5fa9;
+  }
+  
 
 
 

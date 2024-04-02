@@ -5,25 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О нас</title>
-    <link rel="stylesheet" href="about us.css">
+    <link rel="stylesheet" href="/css main pages/about us.css">
 </head>
 
 
 <header>
-    <h1>Travel in Ukraine</h1>
-    <nav>
-        <ul>
-            <li><a href="main.html">Головна</a></li>
-            <li><a href="About US.html">О нас</a></li>
-            <li><a href="contacts.html">Контакти</a></li>
-        </ul>
-    </nav>
+    <div>
+        <h1>Travel in Ukraine</h1>
+        <nav>
+            <ul>
+                <li><a href="/Index.html">Головна</a></li>
+                <li><a href="/main pages/About US.html">О нас</a></li>
+                <li><a href="/main pages/contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+        <div class="login-form">
+            <form>
+                <input type="text" name="name" placeholder="Логін" required>
+                <input type="password" name="name" placeholder="Пароль" required>
+                <a href="/main pages/VHOD.html">Войти</a> <!-- в форме регистрации сверху кнопка вход -->
+                <a href="/main pages/Registration form.html">Регистрация</a>
+            </form>
+        </div>
+    </div>
 </header>
 
 
 <p>Ми команда студентів ITstep , які створили даний проєкт для наших співвітчизників, де показали кращі туристичні місця для відпочинку та ті місця які варто побачити кожному .</p>
 
-<table>
+<!-- <table>
     <tr>
         <th>Фото</th>
         <th>Ім'я</th>
@@ -42,10 +52,8 @@
         <th>Ім'я</th>
     </tr>
     <tr>
-        <td><img src="/about us photo/MAkeda vitalii.jpg" alt="Vitalii"></td>
-        <td>  Македа Віталій
-
-        https://t.me/Hainzenberk
+        <td ><img src="/about us photo/MAkeda vitalii.jpg" alt="Vitalii"></td>
+        <td ><div class="Telegram"><a href="# "><img class="Telegram" src="/Images/Telegram_2019_Logo.svg.webp" alt=""></a></div>  
         </td>
     </tr>
     <tr>
@@ -107,10 +115,42 @@
     <tr>
         <td><img src="developer1.jpg" alt="Разработчик 1"></td>
         <td>Иван Иванов</td>
-    </tr>
+    </tr> -->
 
     
-</table>
+<!-- </table> -->
+
+<div class="grid-container">
+    <div class="grid-item">
+        <a href="html regions/Запорізька.html"><img src="/about us photo/MAkeda vitalii.jpg" alt="Запорізька"></a>
+        <p>Запорізька</p>
+    </div>
+
+    <div class="grid-item">
+        <div style="width: 100px; height: 100px;display: flex; position: absolute ;"><a href="html regions/Волинська.html"> <img src="/Images/free-icon-telegram-2111646.png" alt="Волиньська"></a></div>
+        <p>Волиньська</p>
+    </div>
+
+    <div class="grid-item">
+        <a href="html regions/Вінницька.html"><img src="Images/img Області/Вінницька.svg" alt="Вінницька"></a>
+        <p>Вінницька</p>
+    </div>
+
+    <div class="grid-item">
+        <a href="html regions/Дніпропетровська.html"><img src="Images/img Області/Дніпропетровська.svg"
+                alt="Дніпропетровська"> </a>
+        <p>Дніпропетровська</p>
+    </div>
+
+    <div class="grid-item">
+        <a href="html regions/Донецька.html"><img src="Images/img Області/Донецька.png" alt="Донецька"></a>
+        <p>Донецька</p>
+    </div>
+
+    <div class="grid-item">
+        <a href="html regions/Житомирська.html"><img src="Images/img Області/Житомирська.svg" alt="Житомирська"></a>
+        <p>Житомирська</p>
+    </div>
 <footer>
     <div>
         <a href="https://cloud.itstep.org/">IT курси онлайн</a>

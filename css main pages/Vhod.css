@@ -12,48 +12,7 @@ header {
     z-index: 2;
     position: relative;
 }
-.developer {
-  text-align: center;
-  margin: 20px;
-}
 
-/* .developer img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 10%;
-  display: block;
-  margin: 0 auto;
-} */
-.developer p {
-  margin: 0;
-}
-
-
-table {
-  width: 80%;
-  border-collapse: collapse;
-  margin: 20px auto;
-}
-
-th, td {
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: center;
-  white-space: pre;
-}
-
-th {
-  background-color: #f2f2f2;
-}
-
-img {
-  width: 350px;
-  height: 430px;
-  border-radius: 10%;
-  display: block;
-  margin: 0 auto;
-}
 footer {
     display: flex;
     align-items: center;
@@ -94,8 +53,13 @@ nav ul li a {
     text-decoration: none;
 }
 
+img{
+    width: 10%; 
+    height: 20%; 
+    margin-top: 20px; /* Добавляем отступ сверху */
+    margin-left: 44.7%;
 
-
+}
 p{
     font-weight: 900;
     text-align: center;
@@ -109,7 +73,7 @@ p{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-  
+ 
   
   p {
     margin-bottom: 20px;
@@ -163,4 +127,28 @@ p{
     transition: all 0.3s;
     opacity: 0.1;
     display: none;
+  }
+
+  .login-form {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+  }
+  
+  .login-form form {
+    display: flex;
+  }
+  
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    padding: 5px;
+    margin-right: 5px;
+  }
+  
+  .login-form a {
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
   }

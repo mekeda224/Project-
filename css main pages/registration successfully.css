@@ -57,33 +57,36 @@ section {
     padding: 20px;
 }
 
-.register-form {
-    margin-top: 20px; 
+.register-success {
+    text-align: center; /* Центрируем содержимое */
+    margin-top: 20px; /* Добавляем отступ сверху */
 }
 
-.register-form input[type="text"],
-.register-form input[type="email"],
-.register-form input[type="password"] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+.register-success img {
+    width: auto; /* Устанавливаем желаемую ширину изображения */
+    height: auto; /* Сохраняем пропорции */
 }
 
-.register-form a{
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
+.login-form {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+  }
+  
+  .login-form form {
+    display: flex;
+  }
+  
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    padding: 5px;
+    margin-right: 5px;
+  }
+  
+  .login-form a {
+    padding: 5px 10px;
+    background-color: #333;
     color: white;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
-    margin-top: 100px;
-    margin-left: 900px;
-}
-
-.register-form a:hover {
-    background-color: #45a049;
-}
+  }

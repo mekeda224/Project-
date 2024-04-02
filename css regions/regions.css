@@ -40,7 +40,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0 0;
-    position: fixed;
+    /* position: fixed;  */
     bottom: 0;
     left: 0;
     width: 100%;
@@ -58,92 +58,7 @@ footer {
     color: #0d5fa9;
   }
   
-
-
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto); 
-    gap: 10px; 
-    padding: 10px;
-    padding-left: 220px; 
-    padding-right: 220px; 
-}
-
-.grid-item {
-    background-color: #f0f0f0;
-    overflow: hidden;
-    position: relative;
-    width: 80%;
-    height: auto;
-    margin: 9%; 
-
-}
-
-.grid-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.grid-item:hover img {
-    transform: scale(1.1);
-}
-.grid-item p {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    margin: 0;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-size: 24px;
-    width: calc(100% - 20px);
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
-
-.grid-item:hover p {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.left-column {
-    position: fixed;
-    left: 10px;
-    width: 200px;  
-    
-    z-index: 0;
-}
-
-.left-column img {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    z-index: 1;
-}
-
-.right-column{
-    
-    position: fixed;
-    right: 10px;
-    width: 200px; 
-    height: 100%;
-    z-index: 0;
-    background-size: cover; 
-    background-position: center; 
-}
-
-.right-column img {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    z-index: 1;
-}
-
+ 
 .login-form {
     position: absolute;
     top: 10%;
@@ -167,4 +82,30 @@ footer {
     color: white;
     border: none;
     cursor: pointer;
+}
+
+
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    text-align: center;
+    width: 700px;
+    margin: 0 auto; /* Центрируем текст */
+}
+
+h2 {
+    text-align: center;
+    font-size: large;
+    margin-top: 40px; /* Добавляем отступ сверху для заголовков */
+}
+
+
+
+img {
+    display: block; /* Делаем изображения блочными элементами */
+    margin: 0 auto; /* Центрируем изображения */
+    width: 40%;
+    height: auto; /* Автоматическая высота */
+    margin-top: 20px; /* Добавляем отступ сверху для изображений */
 }

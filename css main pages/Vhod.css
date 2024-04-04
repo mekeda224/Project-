@@ -52,6 +52,9 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
 }
+nav ul li a:hover {
+  color: #0d5fa9;
+}
 
 img{
     width: 10%; 

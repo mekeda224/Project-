@@ -1,116 +1,148 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    z-index: 2;
-    position: relative;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  z-index: 2;
+  position: relative;
 }
 
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0 0;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
-  footer div {
-    display: flex;
-    flex-direction: column;
-  }
-  footer a {
-    text-decoration: none;
-    color: #fff;
-    margin-bottom: 5px;
-  }
-  footer a:hover {
-    color: #0d5fa9;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 5px;
+}
+footer a:hover {
+  color: #0d5fa9;
+}
 nav ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 nav ul li a:hover {
   color: #0d5fa9;
 }
 
 section {
-    padding: 20px;
+  padding: 20px;
 }
 
 .register-form {
-    margin-top: 20px; 
+  margin: 20px auto 100px;
+  max-width: 700px;
+  text-align: center;
 }
+
 
 .register-form input[type="text"],
 .register-form input[type="email"],
 .register-form input[type="password"] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+  width: 600px;
+  padding: 18px;
+  margin-bottom: 10px;
+  border: 1px solid #333;
+  box-sizing: border-box;
 }
 
-.register-form a{
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 100px;
-    margin-left: 900px;
+/* .register-form a {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 100px;
+  margin-left: 900px;
 }
 
 .register-form a:hover {
-    background-color: #45a049;
+  background-color: #45a049;
+} */
+
+/* .login-form {
+  position: absolute;
+  top: 10%;
+  right: 10px;
 }
 
-.login-form {
-    position: absolute;
-    top: 10%;
-    right: 10px;
-  }
-  
-  .login-form form {
+.login-form form {
+  display: flex;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.login-form a {
+  padding: 5px 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+} */
+
+.errors {
+  text-align: left;
+  margin-left: 50px;
+}
+.errors ul {
+  margin-top: 0px;
+}
+
+.errors p {
+  margin-bottom: 10px;
+}
+
+.register-form .errors {
+  transition: all 0.3s;
+  opacity: 0.1;
+  display: none;
+}
+input[type="submit"] {
     display: flex;
-  }
-  
-  .login-form input[type="text"],
-  .login-form input[type="password"] {
-    padding: 5px;
-    margin-right: 5px;
-  }
-  
-  .login-form a {
-    padding: 5px 10px;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding: 10px;
     background-color: #333;
-    color: white;
-    border: none;
+    color: #fff;
     cursor: pointer;
-  }
+    font-size: 16px;
+}
+input[type="submit"]:hover {
+  background-color:#0d5fa9;
+}

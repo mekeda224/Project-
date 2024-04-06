@@ -9,53 +9,70 @@
     <link rel="icon" type="image/png" href="../Images/free-icon-ukraine-197572.png">
 </head>
 
-
-<header>
-    <div>
-        <h1>Travel in Ukraine</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Головна</a></li>
-                <li><a href="../main pages/About US.html">О нас</a></li>
-                <li><a href="../main pages/contacts.html">Контакти</a></li>
-            </ul>
-        </nav>
-        <div class="login-form">
+<body>
+    <header>
+        <div>
+            <h1>Travel in Ukraine</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Головна</a></li>
+                    <li><a href="../main pages/About US.html">О нас</a></li>
+                    <li><a href="../main pages/contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+            <!-- <div class="login-form">
             <form>
                 <input type="text" name="name" placeholder="Логін" required>
                 <input type="password" name="name" placeholder="Пароль" required>
-                <a href="../main pages/VHOD.html">Авторизуватись</a> <!-- в форме регистрации сверху кнопка вход -->
+                <a href="../main pages/VHOD.html">Авторизуватись</a> 
                 <a href="../main pages/Registration form.html">Реєстрація</a>
             </form>
+        </div> -->
         </div>
+    </header>
+
+
+    <div class="register-form">
+        <h2>Реєстрація</h2>
+        <form>
+            <input id="userName" type="text" name="name" placeholder="Ваше ім'я" required>
+            <input id="userSurname" type="text" name="name" placeholder="Ваше прізвище" required>
+            <input id="userEmail" type="email" name="email" placeholder="Ваша електронна пошта" required>
+            <input id="userPassword" type="password" name="password" placeholder="Ваш пароль" required
+                oninput="checkForChanges()">
+
+            <div class="errors">
+                <p>Password must contains:</p>
+                <ul>
+                    <li id="upper">At least one uppercase</li>
+                    <li id="lower">At least one lowercase</li>
+                    <li id="special_char">At least one special symbol</li>
+                    <li id="number">At least one number</li>
+                    <li id="length">At least 8 characters</li>
+                </ul>
+            </div>
+
+            <input id="submitButton" type="submit" value="Відправити" onclick="return submitForm()">
+        </form>
     </div>
-</header>
-
-
-<div class="register-form">
-    <form method="post">
-        <input type="text" name="username" placeholder="Ім'я користувача" required>
-        <input type="email" name="email" placeholder="Електронна пошта" required>
-        <input type="password" name="password" placeholder="Пароль" required>
-        <br>
-        <br>
-        <br>
-        <a href="registration successfully.html">Зареєструватись</a>
-</div>
 
 
 
 
-<footer>
-    <div>
-        <a href="https://cloud.itstep.org/">IT курси онлайн</a>
-        <a href="https://cloud.itstep.org/">&copy; 2024 QA IT-Step</a>
-    </div>
+    <footer>
+        <div>
+            <a href="https://cloud.itstep.org/">IT курси онлайн</a>
+            <a href="https://cloud.itstep.org/">&copy; 2024 QA IT-Step</a>
+        </div>
 
-    <div>
-        <a href="mailto:cloud.office@itstep.org">cloud.office@itstep.org</a>
-        <a href="tel:+38 (073) 797-88-22">+38 (073) 797-88-22</a>
-    </div>
-</footer>
+        <div>
+            <a href="mailto:cloud.office@itstep.org">cloud.office@itstep.org</a>
+            <a href="tel:+38 (073) 797-88-22">+38 (073) 797-88-22</a>
+        </div>
+    </footer>
+
+    <script src="../js/registation.js"></script>
+</body>
+
 
 </html>

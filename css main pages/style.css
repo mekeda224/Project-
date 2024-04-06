@@ -11,7 +11,41 @@ header {
   z-index: 2;
   position: relative;
   width: 100%;
-  
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+/* header div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+} */
+
+.search-wrapper {
+  position: relative;
+}
+
+.search-wrapper img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
+
+.search {
+  padding: 7px 30px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  color: #fff;
 }
 
 /* header div {
@@ -160,8 +194,8 @@ footer a:hover {
   display: flex;
 }
 
-.login-form input[type="text"],
-.login-form input[type="password"] {
+.login-form input[type='text'],
+.login-form input[type='password'] {
   padding: 5px;
   margin-right: 5px;
 }
